@@ -1,0 +1,81 @@
+{
+ "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+ "type": "AdaptiveCard",
+ "version": "1.5",
+ "backgroundImage": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRMYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAbAAEBAQEBAQEBAAAAAAAAAAAAAQIDBAUGB//EACwQAQEAAQIEBQQCAgMAAAAAAAABAgMRITFBUQRhcYGREhNSoULRIrEUYsH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A/qYoAKAAoIKAAoAACgAoAKAAKACggoCCgIKAgoCCpQZqVqs0EABhQAUAAUEUABQAABQAFAAUAFAAABQQUBBQEFQBFKDKNIDIoDmCgAoAKAAAoAAoIoAAAoACgAACgAAAAAAAgqAiNIDIoDmCgAAKACooAKCKAAKAIoAAKAAACgADNzjN1PIHQtcblb1TYHb6p3ifVO8ctjYHb6p3g47JsDujl9V7r9y+QNq5/c8gAABQAUAAUAFBBQAFBBQEFAAAVLlJ1c8s+3JnYHS6nZi23mmygisZ6uOPO8e3OuOXi+2Pvf6B6R4r4jO9ZPSOeVt5233B9C5TvPep9eP5T5j5/wBJ9IPoj530tY55zllfe7g948mPispzkv6rrj4rC8956wHUY+9h+UUHUAAFAABQAURQAAFRQAAAZzz6QDLPZi21FAS2TjeEcdXxMnCf5X9PPnqZZc77TkDrqeJv8Z71yupneeV9uH+k2NgSRdgoAzdSJdTyBscvuXyX675A6Dn9y+S/c8gaNkmpF3gJsKA+kCgAAKAAKAAAAAoACXKRzyy39Aayz7MxGNTWxx872nMHS3bjeDya2vcuE4T91jPUuXPl0nRmQCQMstmLqUHRi6nbixbaAXK1NlKCKxdbGfyntxc8vEzpLf0DsPPfE38Z8p/yb+M+QekeeeJ74/FaniMfOesB2TZMcpeVl9K0CAoPsAoAAAKACggoADF1O3EG2Ms+3yxbbzcs9fHHrve04g67M6mpjjzvt1ry5+IzvL/GeXP5c5iDpqa2WXL/ABnlz+XOYrstoDOWbGWW6bAA46mvJwnG/qA65ZSc7J6ud8Rh3t9I82Vt43jU2B1z8RleXD91yu95231UBNjZQEFARNmkBnZvHUyn8r78UAb+/n/1+KMAP04KCCgAKADGWp2Bti6k6cXPPLrlfl5tTxPTGe9/oHp1M+uV2jz5+K/Gb+d4Rwu94273zXYDLPPLnldu04RJi0AmyiZZbAW7Odu5buAjOpqTHnz6RjV1pOE439R5rbeN5gupncufLt0TYAAAAAAAAAAAEVAAAfpxFBRAGmcstmMs+3y56mpMefx1oN5ZWuGp4iThjxv6cdTVuXlOzEgGWVyu9u/+osigAABbsxc+3Fi3fmDVzvRlnPUxx5325158/EW8MeE79Qd9TVxx58+05uGpr3Llwn7ctlAkAAAAFQAAAAAAAAAAEBQfp9l2Gcs9vUFy2jneI8/iNX+OPvf/AADW1pOGPG9+kea8eN43usigbAADOWp2c88+uV4A6ZZzpxc8r3vD4jz5+I/Ge9/pxyty520Hpy8RjOX+Xpy+XHPWyy8p2n9sSLsDMxXZrYBNl2ADYAEFAEsUBDYUE2FAZFsQAAAAEVFB+lzz6RgAY1s/pnDneTyAAADOWe3qxbvzAHDU19uGPG/p57beNu4AbKACgAAAboAu4gAAAIAoAKIAqUAQAAAEUAf/2Q==",
+ "minHeight": "100px",
+ "body": [
+   {
+     "type": "TextBlock",
+     "text": "Select a subject to revise",
+     "weight": "Bolder",
+     "size": "Medium",
+     "horizontalAlignment": "Center"
+   },
+   {
+     "type": "ColumnSet",
+     "columns": [
+       {
+         "type": "Column",
+         "width": "stretch",
+         "items": [
+           {
+             "type": "ActionSet",
+             "actions": [
+               {
+                 "type": "Action.Submit",
+                 "title": "Physics",
+                 "style": "default",
+                 "data":{
+                    "action":"switch_knowledge_base",
+                    "knowledge_base":"Physics"                    
+                 }
+               }
+             ]
+           }
+         ]
+       },
+       {
+         "type": "Column",
+         "width": "stretch",
+         "items": [
+           {
+             "type": "ActionSet",
+             "actions": [
+               {
+                 "type": "Action.Submit",
+                 "title": "Computer Science",
+                 "style": "default",
+                 "data":{
+                    "action":"switch_knowledge_base",
+                    "knowledge_base":"Computer Science"                    
+                 }
+               }
+             ]
+           }
+         ]
+       },
+       {
+         "type": "Column",
+         "width": "stretch",
+         "items": [
+           {
+             "type": "ActionSet",
+             "actions": [
+               {
+                 "type": "Action.Submit",
+                 "title": "Further Math",
+                 "style": "default",
+                 "data":{
+                    "action":"switch_knowledge_base",
+                    "knowledge_base":"Futher Math"                    
+                 }
+               }
+             ]
+           }
+         ]
+       }
+     ]
+   }
+ ]
+}
